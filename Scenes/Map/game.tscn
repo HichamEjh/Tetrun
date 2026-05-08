@@ -1,6 +1,20 @@
-[gd_scene format=3 uid="uid://bvipf0vfu5pdg"]
+[gd_scene format=4 uid="uid://bvipf0vfu5pdg"]
+
+[ext_resource type="Texture2D" uid="uid://cf83csoe0cv0f" path="res://Scenes/Map/Affichage.png" id="1_wtgpx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtgpx"]
+texture = ExtResource("1_wtgpx")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_38uxl"]
+sources/0 = SubResource("TileSetAtlasSource_wtgpx")
 
 [node name="Game" type="Node2D" unique_id=1510929689]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1989674579]
-position = Vector2(639, 360)
+position = Vector2(320, 176)
+metadata/_edit_lock_ = true
+
+[node name="HUD" type="TileMapLayer" parent="." unique_id=1925883897]
+tile_map_data = PackedByteArray("AAAOABIAAAAAAAAAAAAOABMAAAAAAAAAAAAOABEAAAAAAAAAAAAOABAAAAAAAAAAAAAOAA8AAAAAAAAAAAAOAA4AAAAAAAAAAAAOAA0AAAAAAAAAAAAOAAwAAAAAAAAAAAAOAAsAAAAAAAAAAAAOAAoAAAAAAAAAAAAOAAkAAAAAAAAAAAAOAAgAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAUAAAAAAAAAAAAOAAQAAAAAAAAAAAAOAAMAAAAAAAAAAAAOAAIAAAAAAAAAAAAOAAEAAAAAAAAAAAAOABQAAAAAAAAAAAAOABUAAAAAAAAAAAAOAAAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_38uxl")
