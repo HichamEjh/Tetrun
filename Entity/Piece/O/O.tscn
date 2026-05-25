@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://boe71wlorcmcs"]
+
+[ext_resource type="Texture2D" uid="uid://bq1khdpr6tfyr" path="res://Entity/Piece/O/O.png" id="1_e2v6m"]
+[ext_resource type="Script" uid="uid://cxcwraahyfcht" path="res://Entity/Piece/Piece.gd" id="1_q8ch5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61g5t"]
+size = Vector2(30, 30)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=267757748]
+script = ExtResource("1_q8ch5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2052591987]
+texture = ExtResource("1_e2v6m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888188747]
+shape = SubResource("RectangleShape2D_61g5t")

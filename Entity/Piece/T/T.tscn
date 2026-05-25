@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b56aodhujvua1"]
+
+[ext_resource type="Script" uid="uid://cxcwraahyfcht" path="res://Entity/Piece/Piece.gd" id="1_4pgt3"]
+[ext_resource type="Texture2D" uid="uid://dunmjcsok7bqy" path="res://Entity/Piece/T/T.png" id="1_mlww3"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=59843027]
+script = ExtResource("1_4pgt3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=65086497]
+position = Vector2(0, 8)
+texture = ExtResource("1_mlww3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1564740307]
+position = Vector2(-24, -8)
+polygon = PackedVector2Array(1, 1, 47, 1, 47, 15, 31, 15, 31, 31, 17, 31, 17, 15, 1, 15)
